@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+#board {
+  /* text-align: right; 블록요소에만 적용 가능 */
+}
+
+#board form {
+  float: right;
+}
+
+#board form input[type="text"] {
+  width: 150px;
+  height: 25px;
+}
+
+#board form button {
+  padding: 3px 5px 3px 5px;
+}
+
+#board #board-list table {
+  margin: 10px 0px 10px 0px;
+  width: 800px;
+  height: 300px;
+  border-top: 3px solid #dddddd;
+  border-bottom: 3px solid #dddddd;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+#board #board-list table thead th {
+  background-color: #dddddd;
+  padding: 10px 0px;
+}
+
+#board #board-list table tbody tr {
+  border-bottom: 2px dotted #dddddd;
+}
+
+/********페이징*******/
+
+#board #pagination {
+  text-align: center;
+}
+
+#board #pagination ol {
+  width: 190px;
+  /* margin: 0 auto; */
+  display: inline-block;
+} 
+
+/********페이징 가운데로 보내는 법 두가지******/
+
+/* #board #pagination ol {
+  display: inline-block;
+} */
+
+#board #pagination ol>li {
+  float: left;
+  margin: 0px 5px 0px 0px;
+}
+
+#board #pagination ol>li>a.active {
+   font-size: 15px;
+   font-weight: bold;
+   color: #0000FF;
+}
+
+#board #pagination #btn-write {
+    float: right;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #808080;
+    background-color: #dddddd;
+    border-radius: 2px;
+}
+
+.delete {
+  color: #F00;
+}

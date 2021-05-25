@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+#full-contents #profile {
+  margin: 0px 40px 0px 0px;
+  width: 300px;
+  float: left;
+}
+
+#full-contents #greeting {
+  float: left;
+}
+
+#full-contents #greeting #greet{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px 0px 40px 0px;
+}
+
+#full-contents #greeting #description{
+  font-size: 15px;
+  margin: 10px 0px 0px 0px;
+}

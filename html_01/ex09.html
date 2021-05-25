@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+ 
+  <head lang="ko">
+  
+    <meta charset="UTF-8">
+
+    <title>html5</title>
+
+    <style>
+/* 
+    input[type="password"] {font-size: 50px;}
+
+    input[name="upw"] {background-color: #FF0000;}
+
+ */
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <p>목차</p>
+
+    <ol>
+        <li><a href="ex01.html">h1~h6태그</a></li>
+        <li><a href="ex02.html">p br 태그 q strong b em i태그</a></li>
+        <li><a href="ex03.html">ol ul 리스트</a></li>
+        <li><a href="/javaStudy/workspace_front/html_01/ex04.html">img a태그</a></li>
+        <li><a href="./ex05.html">table thead tbody tr th td 태그></a></li>
+        <li><a href="./ex06.html">태이블 합치기 태그</a></li>
+        <li><a href="./ex07.html">thead tbody tfoot 태그</a></li>
+        <li><a href="./ex08.html">table 종합 연습문제</a></li>
+    </ol>
+  
+    <hr>
+
+    <!--input type="text"> <br>
+    <input type="password">
+
+    <input type="button" value="저장"> 
+    <input type="submit" value="저장"> 
+    <button>저장</button-->
+
+    <form action="join.jsp" method="GET">
+      <label for="txt-uid">아이디</label>
+      <input id="txt-uid" type="text" name="uid" value="" placeholder="아이디"> <br>
+
+      <label for="txt-upw">패스워드</label>
+      <input id="txt-upw" type="password" name="upw" value="" placeholder="패스워드"> <br>
+
+      <label for="file-proimg">프로필사진</label>
+      <input id="file-proimg" type="file" name="file" vlaue=""> <br>
+
+      <br><br>
+
+      <input type="date"> <br>
+      <input type="email"> <br>
+      <input type="number"> <br>
+      <input type="color"> <br>
+
+      <br><br>
+
+      <button type="submit">전송</button> 
+      <!--input type="submit" value="전송"-->
+      <button type="reset">초기화</button>
+
+      <input type="hidden" name="code" value="1234"> <br>
+
+      <!-- 추가로 확인 테스트 해볼것 -->
+
+      <br><br>
+
+      <label for="rdo-apple">사과</label>
+      <input id="rdo-apple" type="radio" name="fruit" value="apple"><br>
+
+      <label for="rdo-grape">포도</label>
+      <input id="rdo-grape" type="radio" name="fruit" value="grape" checked="checked"><br>
+      
+      <label for="rdo-orange">오렌지</label>
+      <input id="rdo-orange" type="radio" name="fruit" value="orange"><br>
+
+      <br><br>
+
+      <label for="rad-jan">1월</label>
+      <input id="rad-jan" type="radio" name="month" value="1"><br>
+
+      <label for="rad-feb">2월</label> 
+      <input id="rad-feb" type="radio" name="month" value="2"><br>
+
+      <label for="rad-mar">3월</label>
+      <input id="rad-mar" type="radio" name="month" value="3"><br>
+
+      <br><br>
+
+      <label for="chk-book">독서</label>
+      <input id="chk-book" type="checkbox" name="hobby" value="bk">
+      
+      <label for="chk-music">음악</label>
+      <input id="chk-music" type="checkbox" name="hobby" value="mu">
+      
+      <label for="chk-trvl">여행</label>
+      <input id="chk-trvl" type="checkbox" name="hobby" value="tr">
+
+      <br><br>
+
+      <label for="chk-dog">개</label>
+      <input id="chk-dog" type="checkbox" name="pet" value="dog">
+
+      <label for="chk-cat">고양이</label>
+      <input id="chk-cat" type="checkbox" name="pet" value="cat" checked="checked">
+
+      <label for="chk-bird">새</label>
+      <input id="chk-bird" type="checkbox" name="pet" value="bird">
+
+      <br><br>
+
+      <select name="telecom">
+        <option value="" selected="selected">이동통신사</option>
+        <option value="sk">SKT</option>
+        <option value="kt">KT</option>
+        <option value="lg">LGu+</option>
+        <option value="et">기타</option>
+      </select>
+
+      <br><br>
+
+      <label for="area-content">본문</label>
+      <textarea id="area-content" name="content" placeholder="입력"></textarea>
+      <!--value 사용 주의-->
+
+
+
+
+    </form>
+
+    <br><br><br>
+
+
+
+
+
+
+
+
+  </body>
+
+
+
+
+
+
+
+</html>

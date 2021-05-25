@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="kor">
+
+ <head>
+ 
+ <meta charset="UTF-8">
+
+ <link rel="stylesheet" href="css/board.css">
+
+  <title>게시판</title>
+
+ </head>
+
+ <body>
+
+  <div id="board">
+
+   <form action="jsp" method="GET">
+
+    <div class="form-group">
+
+     <label for="sel" class="form-text">게시판선택</label>
+     
+     <select id="sel" name="board">
+      
+      <option value="" selected="selected">선택해주세요</option>
+      <option value="notice">공지사항</option>
+      <option value="greeting">가입인사</option>
+      <option value="humor">유머게시판</option>
+      <option value="reqruit">취업게시판</option>
+      <option value="etc">기타게시판</option>
+      
+     </select>
+    
+    </div><!--//게시판선택-->
+    
+    <div class="form-group"><!--제목-->
+    
+     <label for="tit" class="form-text">제목</label>
+
+      <input type="text" id="tit" name="title" value="">
+    
+    </div><!--//제목-->
+
+    <div class="form-group"><!--비밀번호-->
+
+     <label for="pw" class="form-text">비밀번호</label>
+
+      <input type="password" id="pw" name="userpw" value="">
+
+     </div><!--//비밀번호-->
+
+     <div class="form-group"><!--공개범위-->
+
+      <span class="form-text">공개 범위</span>
+
+      <label for="self">본인</label>
+      <input type="radio" id="self" name="privacy" value="oneself">
+
+      <label for="mb">로그인 회원</label>
+      <input type="radio" id="mb" name="privacy" value="member">
+
+      <label for="frid">친구</label>
+      <input type="radio" id="frid" name="privacy" value="friend">
+
+      <label for="whl">전체</label>
+      <input type="radio" id="whl" name="privacy" value="whole" checked="checked">
+
+     </div><!--//공개범위-->
+
+     <div class="form-group"><!--허용범위-->
+
+      <span class="form-text">허용범위</span>
+
+      <label for="cmt">댓글 허용</label>
+      <input type="checkbox" id="cmt" name="setting" value="comment">
+
+      <label for="rpl">답글 허용</label>
+      <input type="checkbox" id="rpl" name="setting" value="reply">
+
+      <label for="lks">좋아요 허용</label>
+      <input type="checkbox" id="lks" name="setting" value="likes">
+
+     </div><!--//허용범위-->
+
+
+     <div class="form-group"><!--임시 주소찾기 버튼-->
+
+
+      <button type="button">주소찾기</button>
+
+     </div><!--//임시 주소찾기 버튼-->
+
+     <div class="form-group"><!--입력창-->
+
+      <textarea id="txt-content" name="text" value=""></textarea>
+
+     </div><!--//입력창-->
+
+     <div><!--첨부파일-->
+      
+      <label for="fl" class="form-text">첨부 파일</label>
+      <input type="file" id="fl" name="file" value="">
+
+     </div><!--//첨부파일-->
+
+     <div class="button-area"><!--버튼-->
+
+      <button type="submit">등록</button>
+      <button type="reset">초기화</button>
+
+     </div><!--//버튼-->
+
+   </form>
+
+  </div> <!--//board-->
+
+ </body>
+
+</html>

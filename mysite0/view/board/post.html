@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head lang="kor">
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="../../assets/css/common.css">
+
+    <link rel="stylesheet" href="../../assets/css/post.css">
+
+
+    <title>mysite0</title>
+
+  </head>
+
+  <body>
+    
+    <div id="wrap"><!--wrap-->
+
+      <div id="header" class="clearfix"><!--header-->
+       
+        <h1><a href="../main/main.html">MySite</a></h1><!--사이트로고-->
+        
+        <ul class="clearfix">
+
+          <li><a href="">로그인</a></li>
+          <li><a href="../user/join.html">회원가입</a></li>
+
+        </ul>
+
+      </div><!--//header-->
+
+      <div id="nav" class="clearfix"><!--nav-->
+       
+        <ul>
+          <li><a href="../info/info.html">입사지원서</a></li>
+          <li><a href="../gallery/gallery.html">갤러리</a></li>
+          <li><a href="../board/list.html">게시판</a></li>
+          <li class="last"><a href="../guestbook/guestbook.html">방명록</a></li>
+
+        </ul>
+      
+      </div><!--//nav-->
+
+      <div id="contents" class="clearfix"><!--contents-->
+
+        <div id="aside"><!--aside-->
+          
+            <h2>게시판</h2>
+
+            <ul>
+
+              <li>일반게시판</li>
+              <li>덧글게시판</li>
+              <li>첨부게시판</li>
+
+            </ul>
+        
+      </div><!--//aside-->
+
+        <div id="main" class="clearfix"><!--main-->
+
+          <div id="main-head" class="clearfix"><!--main-head-->
+           
+            <h3>
+
+              글쓰기
+        
+            </h3>
+
+            <ul class="clearfix">
+
+              <li>홈</li>
+              <li>일반게시판</li>
+              <li class="last">글쓰기</li>
+
+            </ul>
+
+          </div><!--//main-head-->
+
+        <div id="main-body"><!--main-body-->
+
+          <!--이 밑으로 코딩 할 것-->
+
+          <div id="board">
+
+            <form action="jsp" method="GET">
+         
+             <div class="form-group">
+         
+              <label for="sel" class="form-text">게시판선택</label>
+              
+              <select id="sel" name="board">
+               
+               <option value="" selected="selected">선택해주세요</option>
+               <option value="notice">공지사항</option>
+               <option value="greeting">가입인사</option>
+               <option value="humor">유머게시판</option>
+               <option value="reqruit">취업게시판</option>
+               <option value="etc">기타게시판</option>
+               
+              </select>
+             
+             </div><!--//게시판선택-->
+             
+             <div class="form-group"><!--제목-->
+             
+              <label for="tit" class="form-text">제목</label>
+         
+               <input type="text" id="tit" name="title" value="">
+             
+             </div><!--//제목-->
+         
+             <div class="form-group"><!--비밀번호-->
+         
+              <label for="pw" class="form-text">비밀번호</label>
+         
+               <input type="password" id="pw" name="userpw" value="">
+         
+              </div><!--//비밀번호-->
+         
+              <div class="form-group"><!--공개범위-->
+         
+               <span class="form-text">공개 범위</span>
+         
+               <label for="self">본인</label>
+               <input type="radio" id="self" name="privacy" value="oneself">
+         
+               <label for="mb">로그인 회원</label>
+               <input type="radio" id="mb" name="privacy" value="member">
+         
+               <label for="frid">친구</label>
+               <input type="radio" id="frid" name="privacy" value="friend">
+         
+               <label for="whl">전체</label>
+               <input type="radio" id="whl" name="privacy" value="whole" checked="checked">
+         
+              </div><!--//공개범위-->
+         
+              <div class="form-group"><!--허용범위-->
+         
+               <span class="form-text">허용범위</span>
+         
+               <label for="cmt">댓글 허용</label>
+               <input type="checkbox" id="cmt" name="setting" value="comment">
+         
+               <label for="rpl">답글 허용</label>
+               <input type="checkbox" id="rpl" name="setting" value="reply">
+         
+               <label for="lks">좋아요 허용</label>
+               <input type="checkbox" id="lks" name="setting" value="likes">
+         
+              </div><!--//허용범위-->
+         
+         
+              <div class="form-group"><!--임시 주소찾기 버튼-->
+         
+         
+               <button type="button">주소찾기</button>
+         
+              </div><!--//임시 주소찾기 버튼-->
+         
+              <div class="form-group"><!--입력창-->
+         
+               <textarea id="txt-content" name="text" value=""></textarea>
+         
+              </div><!--//입력창-->
+         
+              <div><!--첨부파일-->
+               
+               <label for="fl" class="form-text">첨부 파일</label>
+               <input type="file" id="fl" name="file" value="">
+         
+              </div><!--//첨부파일-->
+         
+              <div class="button-area"><!--버튼-->
+         
+               <button type="submit">등록</button>
+               <button type="reset">초기화</button>
+         
+              </div><!--//버튼-->
+         
+            </form>
+         
+           </div> <!--//board-->
+
+        
+
+
+
+
+
+
+        </div><!--//main-body-->
+
+      </div><!--//main-->
+      
+    </div><!--//contents-->
+
+      <div id="footer"><!--footer-->
+        
+        <p>Copyright ©2021 김영하. All right reserved</p>
+      
+      </div><!--//footer-->
+
+    
+    </div><!--//wrap-->
+
+
+  </body>
+
+</html>

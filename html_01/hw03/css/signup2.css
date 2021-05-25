@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6,
+input, fieldset, legend, p, select, table, th, td, tr, textarea, button, 
+form {
+  margin: 0;
+  padding: 0;
+  font-family: "맑은 고딕", 돋음;
+  font-size: 12px;
+  }
+
+  #form {
+    width: 700px;
+    border: 1px solid #000;
+  }
+
+  .form-text {
+    padding: 10px;
+    border-top: 1px solid #e6e6e6;
+  }
+
+  .form-group {
+    width: 80px;
+    display: inline-block;
+  }
+
+  
+  #txt-uid, #pw-upw, #txt-name {
+    width: 150px;
+  }
+
+  #txt-adr{
+    width: 120px;
+  
+  }
+
+  #txt-adrd{
+    width: 300px;
+    
+  }
+
+  #area-content{
+    width: 380px;
+    height: 150px;
+  }
+
+  .button-area {
+    padding: 10px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
+    border-top: 1px solid #e6e6e6;
+    text-align: center;
+   }
+
+   .button-area>button {
+    width: 60px;
+    padding: 5px;
+   }
+
+   
+   
+   #add1 {
+     float: left;
+   }
+
+   #add2 {
+     float: left;
+   }
+
+   #txt-adrd {
+     display: block;
+   }
+
+
+  
+
+
+  
+
+  .clearfix{*zoom:1;}
+  .clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+  .clearfix:after {clear: both;}

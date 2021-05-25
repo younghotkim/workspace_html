@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+/**************공통*************/
+
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6,
+input, fieldset, legend, p, select, table, th, td, tr, textarea, button, 
+form {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {font-family: "맑은 고딕", 돋음; font-size: 12px;}
+
+ol,ul {list-style: none;}
+
+a:link {text-decoration: none; color: #000;}
+a:visited {text-decoration: none; color: #000;}
+a:active {text-decoration: none; color: #000;}
+a:hover {text-decoration: none; color: #000;}
+
+.clearfix{*zoom:1;}
+  .clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+  .clearfix:after {clear: both;}
+
+/**************레이아웃*************/
+
+#wrap {width: 1000px; margin: 0px auto;}
+#header {
+  padding: 0px 0px 10px 0px;
+  border-bottom: 1px solid #bfbfbf;
+}
+#nav {
+  padding: 10px 0px;
+  background-color: #ffF;
+  border-bottom: 1px solid #bfbfbf;
+}
+/*전체화면용*/
+#full-contents {
+  padding:15px 10px 15px 10px;
+}
+/*2단화면용*/
+#contents {
+  padding: 15px 0px 15px 0px;
+}
+
+#footer {
+  background-color: #dddddd;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+
+/**************헤더*************/
+
+#header h1>a {
+  font-size: 35px;
+  color: #79B30B;
+  margin: 10px 0px 0px 0px;
+  float: left;
+}
+
+#header ul {
+  float: right;
+  margin: 15px 0px 0px 0px;
+}
+
+#header ul>li { 
+  float: left;
+  width: 50px;
+  margin: 0px 0px 0px 10px;
+  padding: 3px 3px 3px 3px;
+  border: 1px solid #bfbfbf;
+  background-color: #efefef;
+  border-radius: 3px 3px 3px 3px;
+  text-align: center;
+}
+
+/**************네비*************/
+
+#nav ul>li {
+  float: left;
+  width:249px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border-right: 1px solid #bfbfbf;
+}
+
+#nav ul>li.last {
+  border-right: none;
+}
+
+ /**************컨텐츠*************/
+
+/*게시판컨텐츠 따로 css파일로 만듦*/
+
+/*왼쪽메뉴*/
+
+#contents #aside {
+  float: left;
+  margin: 0px 20px 0px 0px;
+  width: 180px;
+}
+
+#contents #aside h2 {
+  padding: 20px 15px 20px 15px;
+  background-color: #dddddd;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#contents #aside ul>li {
+  margin: 5px 0px 0px 0px;
+  padding: 5px 5px 5px 5px;
+  border: 1px solid #a6a6a6;
+  font-size: 15px;
+  text-align: left;
+}
+
+/*메인컨텐츠*/
+
+#contents #main {
+  float: left;
+  width: 800px;
+}
+
+#contents #main #main-head {
+  margin: 0px 0px 20px 0px;
+  border-bottom: 1px solid #a6a6a6;
+}
+
+#contents #main #main-head h3 {
+  float: left;
+  margin: 20px 0px 0px 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#contents #main #main-head ul {
+  float: right;
+}
+
+#contents #main #main-head ul>li {
+  float: left;
+  margin: 25px 0px 0px 0px;
+  font-size: 15px;
+}
+
+#contents #main #main-head ul>li:after {
+  content: ">";
+}
+
+#contents #main #main-head ul>li.last:after {
+  content: "";

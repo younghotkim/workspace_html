@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+table {
+  width: 600px;
+  height: 700px;
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+
+#about,#career {
+  width: 600px;
+  height: 800px;
+  border: 1px solid #000;
+  font-size: 15px;
+  text-align: center;
+}
+
+#about>p {
+  margin-top: 30px;
+}
+
+#career>p {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-top: 30px;
+}

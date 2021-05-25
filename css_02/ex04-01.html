@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="kor">
+
+<meta charset="UTF-8">
+
+ <head>
+  
+  <title>스타일시트</title>
+
+   <style>
+
+    table {
+     text-align: center;
+     border-collapse: collapse;
+     font-size: 14px;
+    }
+
+    thead>tr>th {
+     background-color: #DDD;
+     border-top: 2px solid #858585;
+     border-bottom: 2px solid #858585;
+     height: 20px;
+     padding: 3px;
+    }
+
+    tbody>tr>td {
+     border-bottom: 2px dotted #858585;
+    }
+
+    .bottom{
+     border-bottom: 2px solid #858585;
+    }
+
+    tbody>tr:hover {
+     background-color: #FF0;
+    }
+
+    .title {
+     color: #00F;
+     text-decoration: underline;
+     cursor: progress;
+    }
+
+    .btn {
+     
+     border-radius: 20px;
+     width: 80px;
+     display:inline-block;
+     text-align: center;
+     padding: 5px 5px 5px 5px;
+     cursor: pointer;
+     position: relative;   /* 임의로 위치 잡은거 */
+     left: 500px;
+     top: 10px;
+    }
+
+    
+
+    .save {
+     background-color: #ff55ff;
+     border-radius: 5px solid #f7f9ff;
+    }
+    
+    .delete {
+     background-color: #54ffda;
+     border-radius: 5px solid #68ffd8;
+    }
+
+    .fix {
+     background-color: #9d88ff;
+     border-radius: 5px solid #68f;
+    }
+
+    .save:hover {
+     background-color: #FF0000;
+    }
+
+    .delete:hover {
+     background-color: #00FF00;
+    }
+
+    .fix:hover {
+     background-color: #0000FF;
+    }
+
+
+    
+
+
+
+   </style>
+
+
+ </head>
+
+ <body>
+
+  <h1>mysite</h1>
+
+   <h2>게시판</h2>
+
+    <h3>일반게시판</h3>
+
+     <h4>리스트</h4>
+
+      <table>
+
+       <colgroup>
+        
+        <col style="width: 100px;">
+        <col style="width: 300px;">
+        <col style="width: 100px;">
+        <col style="width: 100px;">
+        <col style="width: 100px;">
+        <col style="width: 80px;">
+       
+       </colgroup>
+
+       <thead>
+        
+        <tr>
+         <th>번호</th>
+         <th>제목</th>
+         <th>글쓴이</th>
+         <th>조회수</th>
+         <th>작성일</th>
+         <th>관리</th>
+        </tr>
+
+        </thead>
+
+        <tbody>
+
+         <tr>
+          <td>123</td>
+          <td class="title">게시판 게시글입니다.</td>
+          <td>정우성</td>
+          <td>1232</td>
+          <td>dddddddd</td>
+          <td>삭제</td>
+         </tr>
+
+         <tr>
+          <td>123</td>
+          <td class="title">게시판 게시글입니다.</td>
+          <td>정우성</td>
+          <td>1232</td>
+          <td>dddddddd</td>
+          <td>삭제</td>
+         </tr>
+
+         <tr>
+          <td>123</td>
+          <td class="title">게시판 게시글입니다.</td>
+          <td>정우성</td>
+          <td>1232</td>
+          <td>dddddddd</td>
+          <td>삭제</td>
+         </tr>
+
+         <tr>
+          <td>123</td>
+          <td class="title">게시판 게시글입니다.</td>
+          <td>정우성</td>
+          <td>1232</td>
+          <td>dddddddd</td>
+          <td>삭제</td>
+         </tr>
+
+         <tr class="bottom">
+          <td>123</td>
+          <td class="title">게시판 게시글입니다.</td>
+          <td>정우성</td>
+          <td>1232</td>
+          <td>dddddddd</td>
+          <td>삭제</td>
+         </tr>
+
+        </tbody>
+
+      </table>
+
+      <span class="btn save">저장</span>
+
+      <span class="btn delete">삭제</span>
+
+      <span class="btn fix">수정</span>
+
+ </body>
+
+
+
+
+
+</html>
